@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .taskContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkboxContainer {
+    margin-right: 10px;
+  }
+  
+  .taskText {
+    text-decoration: none;
+  }
+  
+  .completed .taskText {
+    text-decoration: line-through;
+  }
+  

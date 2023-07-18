@@ -8,6 +8,7 @@ const TodoListForm = (props) => {
 
     const taskData = {
       task: task,
+      completed: false,
     };
     props.addTask(taskData);
     taskDataRef.current.value = "";

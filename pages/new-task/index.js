@@ -1,6 +1,3 @@
-// all the list of todo
-// button - todoList form
-
 import { useRouter } from "next/router";
 import TodoListForm from "@/components/todoList/TodoListForm";
 import { Fragment } from "react";

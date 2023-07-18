@@ -11,7 +11,7 @@ export default function Home(props) {
           <title>My Todo App</title>
           <meta name="description" content="Browse your work for today!"></meta>
         </Head>
-        <MyList meetups={props.meetups}/>
+        {!props.meetups.completed && <MyList meetups={props.meetups} />}
       </Fragment>
     </>
   );
@@ -29,6 +29,7 @@ export async function getStaticProps() {
     props: {
       meetups: meetups.map((meetup) => ({
         task: meetup.task,
+        completed: meetup.completed,
         id: meetup._id.toString(),
       })),
     },
